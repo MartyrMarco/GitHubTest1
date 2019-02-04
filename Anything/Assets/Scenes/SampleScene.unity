@@ -192,8 +192,6 @@ GameObject:
   - component: {fileID: 284378012}
   - component: {fileID: 284378011}
   - component: {fileID: 284378010}
-  - component: {fileID: 284378014}
-  - component: {fileID: 284378013}
   - component: {fileID: 284378009}
   m_Layer: 0
   m_Name: Cylinder
@@ -202,8 +200,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &284378009
-SphereCollider:
+--- !u!136 &284378009
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -212,9 +210,10 @@ SphereCollider:
   m_Material: {fileID: 13400000, guid: f830f8474e4ce6c4db7217753474b9e8, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0000002
-  m_Center: {x: 0.00000005960464, y: 8.881784e-16, z: -0.00000008940697}
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &284378010
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -274,6 +273,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -42.562, y: -4.005, z: 59.510002}
+<<<<<<< HEAD
 --- !u!114 &284378013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +304,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> parent of 8b89ed1... Player Movement
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,12 +381,18 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.083224684, y: -0, z: -0, w: 0.99653083}
   m_LocalPosition: {x: -11.06, y: -3.43, z: -22.4}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+>>>>>>> parent of 8b89ed1... Player Movement
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 9.548, y: 0, z: 0}
 --- !u!1 &904506105
 GameObject:
@@ -476,6 +484,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+=======
+>>>>>>> parent of 8b89ed1... Player Movement
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035902303
 GameObject:
@@ -489,7 +499,6 @@ GameObject:
   - component: {fileID: 1035902306}
   - component: {fileID: 1035902305}
   - component: {fileID: 1035902304}
-  - component: {fileID: 1035902308}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -570,22 +579,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -26.966002, y: 34.475002, z: -2.9580002}
---- !u!54 &1035902308
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035902303}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1560759572
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +591,6 @@ GameObject:
   - component: {fileID: 1560759575}
   - component: {fileID: 1560759574}
   - component: {fileID: 1560759573}
-  - component: {fileID: 1560759577}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -679,19 +671,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 39.096, y: -8.379001, z: -98.046005}
---- !u!54 &1560759577
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560759572}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
